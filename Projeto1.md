@@ -2,6 +2,7 @@
 
 
 // Molde da Tarefa
+
 struct Tarefa {
     char titulo[100];
     char descricao[300];
@@ -11,14 +12,12 @@ struct Tarefa {
 
 
 // Variaveis 
+
 struct Tarefa lista[50];
 int contador = 0;
 
 
 // ----- FUNCOES -----
-
-
-
 
 int cadastrarTarefa() {
     printf("\n--- 1. Cadastrar Tarefa ---\n");
@@ -27,7 +26,6 @@ int cadastrarTarefa() {
         printf("Erro: Limite de 50 tarefas atingido.\n");
         return 0;
     }
-
 
     printf("Digite o titulo: ");
     scanf(" %[^\n]", lista[contador].titulo);
@@ -53,7 +51,6 @@ int cadastrarTarefa() {
 int listarTarefas() {
     printf("\n--- 2. Listar Tarefas ---\n");
     int i;
-
 
     if (contador == 0) {
         printf("Nenhuma tarefa cadastrada.\n");
